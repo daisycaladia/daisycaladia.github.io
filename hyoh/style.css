@@ -1,0 +1,120 @@
+@font-face {
+	font-family: bitter;
+	src: url(../bitter.ttf);
+}
+@font-face {
+	font-family: fira-code;
+	src: url(../fira_code.ttf);
+}
+html, body, button {
+	font-size: 16pt;
+	font-family: bitter;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	white-space: 0;
+	display: block;
+	image-rendering: smooth;
+}
+img {
+	vertical-align: middle;
+}
+button {
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#header, #footer {
+	color: #FFF;
+}
+h2 {
+	font-weight: 900;
+	font-size: 1.25em;
+}
+.accordian {
+	margin: 0.6rem auto 0;
+	border: 0.4rem;
+	border-style: solid;
+	border-color: #535353;
+	border-top-color: #d4d4d4;
+	color: #c4c4c4;
+	background: linear-gradient(#a1a1a1, #6b6b6b) no-repeat;
+	font-variant: small-caps;
+	width: 96%;
+	transition: color 0.125s ease, letter-spacing 0.125s ease, font-size 0.125s ease;
+}
+.accordian:hover, .accordian:focus-visible {
+	border-color: #6b6b6b;
+	border-top-color: #FFF;
+	color: #FFF;
+	background: linear-gradient(#dadada, #6b6b6b) no-repeat;
+	letter-spacing: 0.0625rem;
+}
+.open {
+	font-size: 1.25em;
+	border-color: #6b6b6b;
+	border-top-color: #FFF;
+}
+#green_button {
+	margin: 0.6rem auto 0;
+	border: 0.4rem;
+	border-style: solid;
+	border-color: #338d2b;
+	border-top-color: #d8ee90;
+	color: #f5ffd0;
+	background: linear-gradient(#a2cf5a, #54a83a) no-repeat;
+	width: 90%;
+	transition: color 0.125s ease, letter-spacing 0.125s ease, font-size 0.125s ease;
+	font-family: fira-code;
+	font-weight: 900;
+	padding: 0.3rem;
+}
+#green_button:hover, #green_button:focus-visible {
+	border-color: #54a83a;
+	border-top-color: #edf69f;
+	color: #FFF;
+	background: linear-gradient(#d1e465, #54a83a) no-repeat;
+	letter-spacing: 0.0625rem;
+}
+:focus-visible:not(.open), a:focus {
+	outline-style: double;
+	outline-width: 0.25rem;
+	outline-color: #FFF;
+}
+:focus-visible.open {
+	outline-style: none;
+	outline-width: 0.25rem;
+	outline-color: #FFF;
+}
+.accordian:active {
+	display: block; /* tmp */
+}
+.content {
+	background: #6b6b6b;
+	color: #c4c4c4;
+	overflow: hidden; /* backup in case next line doesn't work */
+	overflow: -moz-hidden-unscrollable;
+	max-height: 0;
+	margin: 0 auto;
+	padding-bottom: 0;
+	width: 96%; /* 12 pixels in on either side of 600 */
+	transition: max-height 0.125s ease, padding-bottom 0.125s ease;
+}
+#box-text {
+	font-family: fira-code;
+	border: 0.4rem;
+	border-style: solid;
+	background: #6b6b6b;
+	border-color: #535353;
+	border-bottom-color: #a1a1a1;
+	color: #FFF;
+	width: 90%;
+	padding: 0.6rem 0;
+	margin: 0 auto;
+}
