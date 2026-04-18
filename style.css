@@ -56,6 +56,25 @@ h2 {
 	background: linear-gradient(#9e65e4, #503AA8) no-repeat;
 	letter-spacing: 0.0625rem;
 }
+#main_button {
+	margin: 0.6rem auto 0;
+	border: 0.4rem;
+	border-style: solid;
+	border-color: #342b8d;
+	border-top-color: #ca90ee;
+	color: #E5D0FF;
+	background: linear-gradient(#835acf, #503AA8) no-repeat;
+	font-variant: small-caps;
+	width: 96%;
+	transition: color 0.125s ease, letter-spacing 0.125s ease, font-size 0.125s ease;
+}
+#main_button:hover, #main_button:focus-visible {
+	border-color: #503AA8;
+	border-top-color: #df9ff6;
+	color: #FFF;
+	background: linear-gradient(#9e65e4, #503AA8) no-repeat;
+	letter-spacing: 0.0625rem;
+}
 .open {
 	font-size: 1.25em;
 	border-color: #503AA8;
