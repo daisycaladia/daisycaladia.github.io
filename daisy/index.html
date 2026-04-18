@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Caladia</title>
+		<meta name="description" content="Daisy's very cool website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="ios" content="fuck you">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body style="background: #E5D0FF; max-width: 600px;">
+		<div id="header">
+			<p style="font-size: 0.7rem; font-weight:600;">
+				<a href="https://daisy.caladia.dev">[bluesky]</a>
+				&nbsp;
+				<a href="https://caladia.itch.io">[itch.io]</a>
+				&nbsp;
+				<a href="mailto:daisy@caladia.dev">[email]</a>
+			</p>
+
+			<h1>
+				<a href="/">
+					<img src="logo.png" alt="Daisy Caladia" style="width: 100%;">
+				</a>
+			</h1>
+		</div>
+
+		<p>hi welcome to my VERY work-in-progress website, here are some projects i've worked on:</p>
+		
+		<button class="accordian"><h2>Holding Your Own Hand</h2></button>
+		<div class="content">
+			<p id="box-text">
+				STAY TUNED!
+			</p>
+			<!-- <button id="green_button" onclick="window.open('https://caladia.bandcamp.com/')"><img src="icons/bandcamp.png" style="width: 8%;""> Bandcamp <img src="icons/bandcamp.png" style="width: 8%;""></button> -->
+			<!-- <button id="green_button" onclick="window.open('https://open.spotify.com/artist/428wAVR5Z5JYxXdDzoPSiy')"><img src="icons/spotify.png" style="width: 8%;""> Spotify <img src="icons/spotify.png" style="width: 8%;""></button> -->
+			<!-- <button id="green_button" onclick="window.open('https://music.apple.com/us/artist/josh-caladia/1509434439')"><img src="icons/apple_music.png" style="width: 8%;""> Apple Music <img src="icons/apple_music.png" style="width: 8%;""></button> -->
+			<!-- <button id="green_button" onclick="window.open('https://tidal.com/@caladia')"><img src="icons/tidal.png" style="width: 8%;""> Tidal <img src="icons/tidal.png" style="width: 8%;""></button> -->
+		</div>
+		<button class="accordian"><h2>Legacy Music</h2></button>
+		<div class="content">
+			<p id="box-text">
+				this music is under my human name. on some platforms, it's an outdated name. regardless, some of it is good, and i think it's worth preserving.
+			</p>
+			<button id="green_button" onclick="window.open('https://caladia.bandcamp.com/')"><img src="../icons/bandcamp.png" style="width: 8%;""> Bandcamp <img src="../icons/bandcamp.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://open.spotify.com/artist/428wAVR5Z5JYxXdDzoPSiy')"><img src="../icons/spotify.png" style="width: 8%;""> Spotify <img src="../icons/spotify.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://music.apple.com/us/artist/josh-caladia/1509434439')"><img src="../icons/apple_music.png" style="width: 8%;""> Apple Music <img src="../icons/apple_music.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://tidal.com/@caladia')"><img src="../icons/tidal.png" style="width: 8%;""> Tidal <img src="../icons/tidal.png" style="width: 8%;""></button>
+		</div>
+		<button class="accordian"><h2>Wibbly Series</h2></button>
+		<div class="content">
+			<p id="box-text">
+				for the WibblyPibblyDibbly games, i'm secondary programmer and co-lead designer. i also provide some art and all the music.
+			</p>
+			<button id="green_button" onclick="window.open('https://comicnight.itch.io/wibbly')"><img src="../icons/wibbly_1.png" style="width: 8%;""> Winter Rollout <img src="../icons/wibbly_1.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://comicnight.itch.io/wibblymotor')"><img src="../icons/wibbly_2.png" style="width: 8%;""> Motor School <img src="../icons/wibbly_2.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://comicnight.itch.io/wibbly-treasure-hunt')"><img src="../icons/wibbly_3.png" style="width: 8%;""> Treasure Hunt <img src="../icons/wibbly_3.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://caladia.itch.io/xpos')"><img src="../icons/wibbly_cd.png" style="width: 8%;""> ExperienceOS <img src="../icons/wibbly_cd.png" style="width: 8%;""></button>
+			<button id="green_button" onclick="window.open('https://caladia.itch.io/menger')"><img src="../icons/wibbly_menger.png" style="width: 8%;""> Menger Enigma <img src="../icons/wibbly_menger.png" style="width: 8%;""></button>
+		</div>
+		<button class="accordian"><h2>Other Projects</h2></button>
+		<div class="content">
+			<p id="box-text">
+				i'm still working on this hold on
+			</p>
+		</div>
+		
+		<script>
+			const acco = document.getElementsByClassName("accordian");
+			for (var i = 0; i < acco.length; i++) {
+				var content
+				acco[i].addEventListener("click", function() {
+					content = this.nextElementSibling;
+					this.classList.toggle("open");
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+						content.style.paddingBottom = 0;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+						content.style.paddingBottom = 1.2 + "em";
+					}
+				});
+			}
+		</script>
+
+		<div id="footer">
+			<p style="font-size: 0.7rem; font-weight:600;">
+				<a href="https://github.com/daisycaladia/daisycaladia.github.io">[website repo]</a>
+			</p>
+		</div>
+	</body>
+</html>

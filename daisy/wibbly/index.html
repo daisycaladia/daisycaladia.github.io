@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WibblyPibblyDibbly — Caladia</title>
+		<meta name="description" content="The complete WibblyPibblyDibbly collection!">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="ios" content="fuck you">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body style="background: #E5D0FF; max-width: 600px;">
+		<div id="header">
+			<p style="font-size: 0.7rem; font-weight:600;">
+				<a href="https://daisy.caladia.dev">[bluesky]</a>
+				&nbsp;
+				<a href="https://caladia.itch.io">[itch.io]</a>
+				&nbsp;
+				<a href="mailto:daisy@caladia.dev">[email]</a>
+			</p>
+
+			<h1>
+				<a href="/">
+					<img src="logo_wibblified.png" alt="Daisy Caladia" style="width: 100%;">
+				</a>
+			</h1>
+		</div>
+
+		<p>WibblyPibblyDibbly was a being of great fortune for those it favoured, but rarely did it favour anyone or anything beyond its own personal thrills.</p>
+		<p>Experience the full range of emotions with the full, unabridged WibblyPibblyDibbly series below, for the low, low price of your composure!</p>
+		
+		<button class="accordian"><h2>Winter Rollout</h2></button>
+		<div class="content">
+			<p id="box-text">Join WibblyPibblyDibbly in his first outing, as he recruits you for a prank of epic proportions!</p>
+			<p>Made in 4 days for the <b>GMTK Game Jam 2024</b>.</p>
+			<button id="green_button" onclick="window.open('https://comicnight.itch.io/wibbly')"><img src="../../icons/wibbly_1.png" style="width: 8%;""> Play Now! <img src="../../icons/wibbly_1.png" style="width: 8%;""></button>
+		</div>
+		<button class="accordian"><h2>Motor School</h2></button>
+		<div class="content">
+			<p id="box-text">WibblyPibblyDibbly has gotten into the business of Drivers' Ed, and has invited you for a free first lesson!</p>
+			<p>Made for a self-imposed game jam.</p>
+			<button id="green_button" onclick="window.open('https://comicnight.itch.io/wibblymotor')"><img src="../../icons/wibbly_2.png" style="width: 8%;""> Play Now! <img src="../../icons/wibbly_2.png" style="width: 8%;""></button>
+		</div>
+		<button class="accordian"><h2>Treasure Hunt</h2></button>
+		<div class="content">
+			<p id="box-text">WibblyPibblyDibbly is dead. He needs your help to return to the land of the living, so he may pull more dastardly pranks!</p>
+			<p>Made in 1 week for <b>Brackeys Game Jam 2025.1</b>.</p>
+			<button id="green_button" onclick="window.open('https://comicnight.itch.io/wibbly-treasure-hunt')"><img src="../../icons/wibbly_3.png" style="width: 8%;""> Play Now! <img src="../../icons/wibbly_3.png" style="width: 8%;""></button>
+		</div>
+		<button class="accordian"><h2>ExperienceOS</h2></button>
+		<div class="content">
+			<p id="box-text">You received a special CD ROM in your cereal box! It's time to see what happens when you put the CD in your computer.</p>
+			<p>Made in 4 and a half days for <b>Jamsepticeye</b>.</p>
+			<button id="green_button" onclick="window.open('https://caladia.itch.io/xpos')"><img src="../../icons/wibbly_cd.png" style="width: 8%;""> Play Now! <img src="../../icons/wibbly_cd.png" style="width: 8%;""></button>
+		</div>
+		<button class="accordian"><h2>Menger Enigma</h2></button>
+		<div class="content">
+			<p id="box-text">You find yourself lost in an abyss with nothing but an itch in your spine to guide you. You feel like someone is watching.</p>
+			<p>Made in 1 week for <b>Brackeys Game Jam 2026.1</b>.</p>
+			<button id="green_button" onclick="window.open('https://caladia.itch.io/menger')"><img src="../../icons/wibbly_menger.png" style="width: 8%;""> Play Now! <img src="../../icons/wibbly_menger.png" style="width: 8%;""></button>
+		</div>
+		
+		<script>
+			const acco = document.getElementsByClassName("accordian");
+			for (var i = 0; i < acco.length; i++) {
+				var content
+				acco[i].addEventListener("click", function() {
+					content = this.nextElementSibling;
+					this.classList.toggle("open");
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+						content.style.paddingBottom = 0;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+						content.style.paddingBottom = 1.2 + "em";
+					}
+				});
+			}
+		</script>
+
+		<div id="footer">
+			<p style="font-size: 0.7rem; font-weight:600;">
+				<a href="https://github.com/daisycaladia/daisycaladia.github.io">[website repo]</a>
+			</p>
+		</div>
+	</body>
+</html>
