@@ -33,11 +33,10 @@ p > a:hover {
 #header, #footer {
 	color: #503AA8;
 }
-h2 {
+.accordian {
 	font-weight: 900;
 	font-size: 1.25em;
-}
-.accordian {
+	padding: 0.83em;
 	margin: 0.6rem auto 0;
 	border: 0.4rem;
 	border-style: solid;
