@@ -19,6 +19,7 @@ html, body, button {
 }
 img {
 	vertical-align: middle;
+	outline: none;
 }
 button {
 	cursor: pointer;
@@ -27,7 +28,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-a:hover {
+p > a:hover {
 	text-decoration: underline;
 }
 #header, #footer {
@@ -101,7 +102,7 @@ h2 {
 	background: linear-gradient(#d1e465, #54a83a) no-repeat;
 	letter-spacing: 0.0625rem;
 }
-:focus-visible:not(.open), a:focus {
+:focus-visible:not(.open), p > a:focus {
 	outline-style: double;
 	outline-width: 0.25rem;
 	outline-color: #503AA8;
