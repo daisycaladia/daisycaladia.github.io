@@ -7,6 +7,9 @@
 	src: url(fira_code.ttf);
 }
 html, body, button {
+	background: #E5D0FF;
+	color: #000;
+	max-width: 600px;
 	font-size: 16pt;
 	font-family: bitter;
 	text-align: center;
@@ -19,7 +22,6 @@ html, body, button {
 }
 img {
 	vertical-align: middle;
-	outline: none;
 }
 button {
 	cursor: pointer;
@@ -30,6 +32,14 @@ a {
 }
 p > a:hover {
 	text-decoration: underline;
+}
+#essay {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+#essay > br {
+	display: block;
+	margin: 0.3em;
 }
 #header, #footer {
 	color: #503AA8;
