@@ -33,7 +33,7 @@ a {
 p > a:hover {
 	text-decoration: underline;
 }
-#essay {
+#essay, #tight_essay {
 	margin-right: 10%;
 	margin-left: 10%;
 }
